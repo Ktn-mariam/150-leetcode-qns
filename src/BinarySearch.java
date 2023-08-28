@@ -14,4 +14,17 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    public int recursiveSearch (int[] nums, int low, int high, int target){
+        int mid = high + low /2;
+        if (high >= low) {
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] > target) {
+                recursiveSearch(nums, low, mid - 1, target);
+            } else {
+                recursiveSearch(nums, mid + 1, high, target);
+            }
+        }
+        return -1;
+    }
 }
