@@ -1,5 +1,6 @@
 import java.util.*;
 
+// LINK: https://leetcode.com/problems/valid-anagram/
 public class ValidAnagram {
     public boolean sorting(String s, String t) {
         char[] sChars = s.toCharArray();
@@ -54,3 +55,13 @@ public class ValidAnagram {
     }
 
 }
+
+/*
+NEW SYNTAX
+    1-To sort array: Arrays.sort(nums);
+    2-To create hashset: HashSet<Integer> hs = new HashSet<>();
+    3-To create hashmap: HashMap<Character, Integer> hm = new HashMap<>();
+            hm.put(c, number)
+            hm.contains(c)
+            hm.put(x, hm.getOrDefault(x, 0) + 1);
+ */
