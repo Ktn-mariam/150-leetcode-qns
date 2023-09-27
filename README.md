@@ -1,2 +1,2 @@
-### 150 LEETCODE QUESTIONS
-In this repository, I will be solving 150 leet code questions from https://neetcode.io/practice in Java Language.
+### LEETCODE SOLUTIONS
+In this repository, I will be solving leet code problems from https://neetcode.io/practice and others in Java Language.
