@@ -1,3 +1,11 @@
+/*
+Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+Theory:
+    Search for min and max by calling binary Search twice
+    For finding min, update high as mid -1 on finding min, so that we can find the target value in an even lower position
+    Same for max, update it as low = mid +1
+ */
+
 public class FindFirstAndLastPositionOfElementInSortedArray {
     public int[] searchRange(int[] nums, int target) {
         int[] output = new int[2];
