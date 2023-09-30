@@ -1,7 +1,15 @@
+/*
+Link: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
+Theory:
+    1- Use the idea of binary search
+    2- grid.length - lowest position of negative numbers = number of -ve numbers
+    3- keep adding the count
+    4-return count
+ */
+
 public class CountNegNumsInSortedMatrix {
     public int countNegatives(int[][] grid) {
         int count =0;
-        int n = grid.length;
         for (int i=0; i<grid.length; i++) {
             int low = 0;
             int high = grid[i].length-1;
